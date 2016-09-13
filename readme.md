@@ -18,7 +18,15 @@ B. htaccess
         AddHandler server-parsed .html
 
 
-    3.  Check index.php
+    3.  The function in index.php check the URI on each call for the dispatcher
+
+    4.  The dispatcher.php recept the URI and call the Router.php with the url.	
+
+    5.  The Router.php parse the url, verify and return they names of the controller, the 	
+	methode.
+
+    6.   The dispatcher.php call the controller and the function.
+
 
 C. Templates
     1.  Sessions - cookies
